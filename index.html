@@ -1,113 +1,158 @@
 <!DOCTYPE html>
-<html>
-
+  
+<html lang="en">
 <head>
-  <title>Module 20 Homework</title>
-  <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>UX/UI Homework 20</title>
 </head>
 
+<!-- HW20: Bootstrap Case Study Page -->
+
 <body>
-  <header>
-    <div class="inline-block logo">
-      <h1>Carina Daniluk</h1>
-    </div>
-    <ul>
-      <li class="inline-block"><a href="#">ABOUT</a></li>
-      <li class="inline-block"><a href="#">SKILLS</a></li>
-      <li class="inline-block"><a href="#">WORK</a></li>
-      <li class="inline-block"><a href="#">CONTACT</a></li>
+  <div class= "ombre-background">
+
+    <!-- Navigation: Bootstrap Nav Component -->
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Problem Statement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iteration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Prototype</a>
+        </li>
     </ul>
-  </header>
+    <!-- End Navigation -->
 
-
-  <section class="HeroImg">
-    <div class="content">
-      <img src="./images/Me.png" alt="This is Me" class="center" width="200px">
-      <p class="thick">Hello!</p>
-      <p>My name is Carina Daniluk, and I am a UX/UI designer who is
-        passionate about creating accessible, responsive and
-        intuitive designs for the user experience.</p>
-      <p>I am a seasoned retail professional with years of experience as a buyer
-        with a digital first mindset. This has allowed me to bridge the gap of in store
-        and online shoppers alike. Taking my passion of digital commerce and the
-        customer shopping journey, I set out with a goal to dive into UX and UI to
-        expand my knowledge and experience in this digital world.</p>
-      <button>Download Resume</button>
+    <!-- Introduction: Bootstrap Jumbotron Component -->
+    <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3 rockBackground">
+        <div class="jumboCopy">
+          <img src="" style="width: 18rem;">
+          <div class="container-fluid py-5">
+            <h1 id="title">NSPKU</h1>
+            <h6>Curating a plan to create healthy habits.</h6>
+            <h3 class="display-5 fw-regular">A Non-Profit Website Redesign Case Study</h3>
+            <p class="col-md-8 fs-4">In this case study, I worked as a UX researcher and designer
+              alongside 3 other UX prospective designers and researchers to redesign a desktop and mobile web
+              website aiding individuals and families diagnosed with PKU.
+            </p>
+          </div>
+        </div>
     </div>
-  </section>
+    <!-- End Introduction -->
 
-  <!-------Flexbox Section - Flexbox Skills-->
-  <section id="flex-skills">
-    <h1>My UX Skills</h1>
-    <div id="row" class="flex skills">
+    <!-- Research: Bootstrap Card Component -->
+    <h2>User Research</h2>
 
-      <div class="flex-item">
-        <h1>Skill 1</h1>
-        <p>Lorem ipsum</p>
-      </div>
-
-      <div class="flex-item">
-        <h1>Skill 2</h1>
-        <p>Lorem ipsum</p>
-      </div>
-
-      <div class="flex-item">
-        <h1>Skill 3</h1>
-        <p>Lorem ipsum</p>
-      </div>
-
+    <div class="urText">
+      <p>
+        Conducting research was very important to us to understand what users would be looking for when coming to a site like NSPKU.org. While our team was not able to secure an interview with someone diagnosed with PKU or their family members, we were able to secure time with two subject matter experts in the field.
+      </p>
+      <p>
+        To better understand the prospective users of our website, we conducted interviews with two Pharmacists that specialize in PKU to understand pain points for those impacted with PKU and hypothesize what we could do to improve the current site. 
+      </p>
     </div>
-    <br>
-    <div id="row" class="flex skills">
 
-      <div class="flex-item">
-        <h1>Skill 4</h1>
-        <p>Lorem ipsum</p>
+    <div class="cardContainer">
+
+      <!-- Card 1 -->
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">“It's important for newly diagnosed individuals to know they are not alone”</h5>
+            <p class="card-text">-Quote from a Subject Matter Expert's Interview</p>
+          </div>
       </div>
 
-      <div class="flex-item">
-        <h1>Skill 5</h1>
-        <p>Lorem ipsum</p>
-      </div>
-
-      <div class="flex-item">
-        <h1>Skill 6</h1>
-        <p>Lorem ipsum</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-----CSS Grid Skills-->
-  <section id="projects">
-    <h1>My Work</h1>
-    <div class="grid">
-      <div class="project1">
-        <img src="./images/nspku.png" id="nspku-img">
-        <div class="project-details1">
-          <h3 class="project-title">Non-Profit Website Redesign</h3>
-          <p class="project-text">As a group, I worked with fellow UX designers to redesign the non-profit organization
-            website of NSPKU.org.</p>
+      <!-- Card 2 -->
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">“[Newly diagnosed patients] Often looking for a sense of community, looking for someone to relate to ”</h5>
+          <p class="card-text">-Quote from a Subject Matter Expert's Interview<</p>
         </div>
       </div>
-      <div class="project2">
-        <img src="./images/forecaddie.png" id="forecaddie-img">
-        <div class="project-details2">
-          <h3 class="project-title">Fore Caddie App</h3>
-          <p class="project-text">As a UX Designer, I created a travel app focused on golfers as a travel aid, or "Fore
-            Caddie", to help users enjoy their trip without having to stress on the details. </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <ul>
-      <li class="inline-block"><a href="#">ABOUT</a></li>
-      <li class="inline-block"><a href="#">SKILLS</a></li>
-      <li class="inline-block"><a href="#">WORK</a></li>
-      <li class="inline-block"><a href="#">CONTACT</a></li>
-    </ul>
+    </div>
+    <!-- End Research -->
+
+    <!-- Problem Statement: Bootstrap Jumbotron Component -->
+    <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3 rockBackground">
+        <div class="jumboCopy">
+          <div class="container-fluid py-5">
+            <h3 class="display-5 fw-bold problemStatement">Problem Statement</h3>
+            <p class="fs-4 psText">We believe that creating a wellness application 
+              offering curated daily tasks and ai-generated health plans for our users, 
+              like Lauren, who are navigating challenges with their mental and physical 
+              health, will achieve success in fostering a healthier lifestyle.
+            </p>
+          </div>
+        </div>
+    </div>
+    <!-- End Problem Statement -->
+
+    <!-- Iteration: Bootstrap Card & List Components -->
+    <h2>Wireframe Iterations</h2>
+    <div class="cardContainer">
+
+      <!-- Card 1 -->
+      <div class="card" style="width: 18rem;">
+          <img src="./images/Review Answers.png" class="card-img-top iterationImg" alt="Generate Plan Button">
+          <div class="card-body">
+            <h5 class="card-title">The Generate Plan Button</h5>
+            <p class="card-text">Through user testing we found that it made more sense for the generate plan button to be located at the end of the survey page and not on its own page.</p>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="width: 18rem;">
+        <img src="./images/My Plan Page.png" class="card-img-top iterationImg" alt="Generate Plan Button">
+        <div class="card-body">
+          <h5 class="card-title">The My Plan Page</h5>
+          <p class="card-text">Additionally, we reworked the my plan page to be grouped into sections to make it easier for users to navigate.</p>
+        </div>
+    </div>
+
+    </div>
+    <!-- End Iteration -->
+
+    <!-- Prototype-->
+    <h2>Prototype</h2>
+      
+      <div class="prototype">
+        <center><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4ZGzGNs18L8VQ4yp4f6TJj%2FMid-Fi-%2526-High-Fi-Prototypes---Mobile-%2526-Desktop%3Fpage-id%3D101%253A3668%26node-id%3D349-4877%26node-type%3DCANVAS%26viewport%3D211%252C253%252C0.02%26t%3DJIUoBjZgkYxpvPBd-1%26scaling%3Dscale-down%26content-scaling%3Dresponsive%26starting-point-node-id%3D349%253A4877" allowfullscreen></iframe>
+      </div>
+    <!-- End Prototype -->
+    
+    <!-- Footer -->
+    <footer>
+      <ul class="footer">
+          <li class="inline-block">About</li>
+          <li class="inline-block">Skills</li>
+          <li class="inline-block">Work</li>
+          <li class="inline-block">Contact</li>
+      </ul>
   </footer>
+
+  </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </html>
